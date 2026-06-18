@@ -11,7 +11,8 @@
 ## I en mening
 
 > En 2-årig YH-fullstackutbildning i **TypeScript / React / Node.js / AWS**,
-> med **arkitektur som tyngdpunkt** och **AI-arbetsflöde som löpande tråd**,
+> med **Python som dedikerat AI-integrationsspår**,
+> **arkitektur som tyngdpunkt** och **AI-arbetsflöde som löpande tråd** —
 > som differentierar oss från våra Java- och .NET-program och täcker den största
 > icke-Java/.NET-nischen i svensk fullstack-rekrytering.
 
@@ -34,7 +35,7 @@
 | Primärspråk | Java | C# | **TypeScript** |
 | Backend | Spring Boot | ASP.NET | **Node.js** |
 | Cloud | Azure | Azure | **AWS** |
-| Sekundärspår | — | — | **Python** |
+| AI-integration | — | — | **Python (FastAPI, LangChain, MCP)** |
 | Anställningsmarknad | Stora företag, bank, försäkring | Microsoft-eko, offentlig sektor | **Scale-up, modern produktutveckling, AI-tunga produkter** |
 
 ---
@@ -48,14 +49,14 @@ HT1 ──────── 16 v · 80 YHp ──────── Fundament
 VT1 ──────── 25 v · 125 YHp ────── Fullstack-bredd
                        Frontend · Backend · Projekt i team
                                  │
-HT2 ──────── 17 v · 85 YHp ─────── Arkitektur · drift · examen
-                       Arkitektur · DevOps · Examensprojekt
+HT2 ──────── 17 v · 85 YHp ─────── Arkitektur · Python+AI · drift · examen
+                       Arkitektur · Python/AI · DevOps · Examensprojekt
                                  │
 VT2 ──────── 20 v · 100 YHp ────── LIA
                        Anställningsförberedelse
 ```
 
-**9 kurser totalt** + LIA. Genomgående trådar (inte separata kurser): AI-arbetsflöde, hantverket, projektkunnande, yrkesmässighet.
+**10 kurser totalt** + LIA. Genomgående trådar (inte separata kurser): AI-arbetsflöde, hantverket, projektkunnande, yrkesmässighet.
 
 ---
 

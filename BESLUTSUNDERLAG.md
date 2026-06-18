@@ -9,7 +9,7 @@
 
 ## Sammanfattning på en sida
 
-Skolan föreslås starta en tredje fullstackutbildning som komplement till de existerande Java- och .NET-programmen. Den nya utbildningen profileras mot **TypeScript/React/Node.js-stacken med Python och AWS som närliggande verktyg** — den dominerande icke-Java/.NET-nischen på svensk arbetsmarknad.
+Skolan föreslås starta en tredje fullstackutbildning som komplement till de existerande Java- och .NET-programmen. Den nya utbildningen profileras mot **TypeScript/React/Node.js-stacken på AWS, med Python som dedikerat AI-integrationsspår** — den dominerande icke-Java/.NET-nischen på svensk arbetsmarknad.
 
 **Optimeringsmål:** maximera andelen utexaminerade som inom 6 månader från examen har en anställningsrelevant tjänst.
 
@@ -33,7 +33,7 @@ Skolan föreslås starta en tredje fullstackutbildning som komplement till de ex
 | Backend-ramverk | Spring Boot | ASP.NET Core | **Node.js (Express/Hono/Nest)** |
 | Frontend | Varierande | Blazor, React | **React + Next.js** |
 | Cloud | Azure, AWS | Azure | **AWS, Vercel** |
-| Andra-spår / specialisering | — | — | **Python (FastAPI) som sekundär kompetens** |
+| Andra-spår / specialisering | — | — | **Python (FastAPI) för AI-integrerade applikationer** — egen 15 YHp-kurs i HT2 |
 | Marknadsandel SE-fullstack | 41% | (ingår i 41%) | **35%** (JS/Python/Other tillsammans) |
 | Differentierande styrkor | Stora företag, bank, försäkring | Microsoft-ekosystem, offentlig sektor | **Startup/scale-up, modern produktutveckling, AI-tunga produkter** |
 
@@ -161,18 +161,19 @@ Fokus: **bredden över hela stacken**. VT1:s ovanliga längd ger utrymme att gå
 | 6 | Projektkurs 1 — fullstack-leverans i team | 25 | 5 | Riktig brief, agila praktiker, code review, dokumentation, presentation till bransch |
 
 ### HT2 — 17 veckor / 85 YHp
-Fokus: **arkitektur, drift, examen**. Den senior-trajectory-laddade terminen — där "junior med senior-potential" levereras.
+Fokus: **arkitektur, drift, Python+AI, examen**. Den senior-trajectory-laddade terminen — där "junior med senior-potential" levereras.
 
 | # | Kurs | YHp | Veckor | Innehåll |
 |---|---|---|---|---|
-| 7 | Arkitektur och säkerhet | 40 | 8 | System design, API-design (kontrakt, versionering), OWASP, GDPR, secrets management, observability, distribuerade-system-koncept, performance/skalning |
-| 8 | DevOps och molntjänster | 20 | 4 | Docker, CI/CD, AWS/Vercel-deployment, monitoring, IaC-introduktion |
-| 9 | Examensprojekt | 25 | 5 | Individuellt projekt med arkitekturmotivering, presentation till branschpanel |
+| 7 | Arkitektur och säkerhet | 25 | 5 | System design, API-design (kontrakt, versionering), OWASP, GDPR, secrets management, observability, distribuerade-system-koncept, performance/skalning |
+| 8 | Python för AI och data | 15 | 3 | Python-syntax (snabbgenomgång), FastAPI-grund, Python i AI-stacken (LangChain/MCP), scripting och data-manipulation. **Inte ett alternativt fullstack-spår** — Python som verktyg för AI-integrerade applikationer. |
+| 9 | DevOps och molntjänster | 20 | 4 | Docker, CI/CD, AWS/Vercel-deployment, monitoring, IaC-introduktion |
+| 10 | Examensprojekt | 25 | 5 | Individuellt projekt med arkitekturmotivering, presentation till branschpanel |
 
 ### VT2 — LIA, ca 20 veckor / ca 100 YHp
 LIA designas som en *anställningskanal*. Se §7 nedan för LIA-strategi.
 
-**Total: 9 kurser + LIA = 10 läromoment.** Strukturen kan ytterligare slås samman om skolans norm är färre, men under ~8 kurser börjar varje kurs bli så bred att lärandemålen blir svåra att hålla sammanhängande för MYH-ansökan.
+**Total: 10 kurser + LIA = 11 läromoment.** Strukturen kan ytterligare slås samman om skolans norm är färre, men under ~8 kurser börjar varje kurs bli så bred att lärandemålen blir svåra att hålla sammanhängande för MYH-ansökan.
 
 ### Genomgående trådar (inte separata kurser)
 
@@ -210,7 +211,7 @@ Detta kräver fyra explicita designval:
 
 | Termin | AI-fokus |
 |---|---|
-| 1 | Lär AI-verktyg som assistent (Claude Code, Cursor, Copilot). Förbjudet på kunskapsprov, tillåtet (krävt) på laborationer. Reflexion om vad man lärt sig vs vad AI gjort. |
+| 1 | Lär AI-verktyg som assistent (Claude Code, Cursor, Copilot). Förbjudet på kunskapsprov, tillåtet (och förväntat) i workshops och projektarbete. Reflexion om vad man lärt sig vs vad AI gjort. |
 | 2 | AI-assisterad UI-utveckling, designsystem-iteration, kritisk granskning av AI-genererad React-kod. |
 | 3 | AI för API-design (specgenerering, mock-data, testfall), context engineering, säkerhetsgranskning av AI-output. |
 | 4 | Agentic workflows i större projekt (Claude Code med custom skills, multi-agent), yrkesetik och GDPR vid AI-användning. |

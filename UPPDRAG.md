@@ -163,7 +163,65 @@ Tekniksiffror från första körningen (svenska annonser, icke-Java/.NET, n=119)
 
 ---
 
-## 6. Taxonomi för LLM-extraktion (input till Sonnet-prompten)
+## 6. Formativ bedömning som genomgående tråd
+
+Genom hela programmet tillämpas **formativ bedömning** — löpande, lågsanktionerad återkoppling som stödjer lärandet snarare än bara graderar det. Det är en pedagogisk grundprincip, inte en valbar metod.
+
+### Varför formativt
+
+- Studenter får möjlighet att förbättra innan slutleverans → höjer examensgrad och leveranskvalitet
+- Lärare upptäcker tidigt om en kohort kämpar med ett specifikt moment → pivot innan det är för sent
+- Bygger den **självgranskningsförmåga** som är central för senior-trajectory (kopplar till 5.6 — yrkesmässighet och självledning, och 5.7 — kvalitetssäkringsverktyg i kursmål)
+- Matchar evidens från cognitive load theory (Sweller) och deliberate practice — formativ återkoppling är vad som gör övning till lärande
+
+### Mekanismer som tillämpas genom programmet
+
+| Mekanism | Vad det är |
+|---|---|
+| **Code reviews** (lärare + peer) | Studenter får regelbunden återkoppling på kod under utveckling, inte bara vid slutleverans. Lär dessutom *att granska andras kod* — en av de viktigaste yrkesfärdigheterna. |
+| **Worked examples + completion problems** | Inbäddade i undervisningen (se 5.1) — fungerar som formativ träning innan självständig övning |
+| **Utkastfeedback** | Inlämningsuppgifter granskas innan slutbedömning, så studenten kan iterera baserat på återkoppling |
+| **Lättviktiga checkar** | Korta, icke-graderade förståelse-quizar eller pulskoll för att se var en kohort står |
+| **Reflexionsmoment** | Studenten redogör för egna val och resonemang — typiskt kopplat till kompetensmål om självledning |
+
+### Förhållande till summativ bedömning
+
+Formativ bedömning **ersätter inte** "Former för kunskapskontroll" i kursplanerna — den **kompletterar** dem. Summativ bedömning sätter slutbetyg; formativ stöttar resan dit.
+
+I kursplanerna förekommer formativ bedömning *inte* explicit som examinationsmoment (eftersom den är icke-graderad), men den ska genomsyra arbetsformer i samtliga kurser. Den enda kursplan där code review explicit nämns som arbetssätt är **kurs 3** (kursmål 8 — "kodgranskning och refaktorering som arbetsmetoder"), där det också är en yrkesfärdighet att lära ut, inte enbart en pedagogisk metod.
+
+---
+
+## 7. Lärautonomi som genomgående pedagogisk princip
+
+Datasignalen `self_learning` ligger på **91% i SE-niche-annonserna** — högst av alla signaler. För juniors anställningsbarhet och senior-trajectory är förmågan att *själv lära sig nytt* fundamentalt. I FJS26 är detta inte ett enskilt kursmål utan en **genomgående pedagogisk princip** som genomsyrar hur kurserna drivs.
+
+### Vad det innebär konkret
+
+- **Studenten möter nytt material först självständigt** (läsning, video, dokumentation) och sedan i workshop där lärare verifierar förståelse
+- **Tekniska val i projekt får inte vara totalt anvisade** — studenten ska göra något val själv (vilket bibliotek, vilken metod) och kunna motivera det
+- **Examensprojekt och LIA-uppgifter testar förmågan att möta okända teknologier** — studenten möter material som inte uttryckligen undervisats
+- **Lärare modellerar self-learning** — visar hur man söker, läser dokumentation, prövar nytt, värderar källor
+
+### Förhållande till andra principer
+
+Lärautonomi är nära kopplat till:
+- **Formativ bedömning** (§6) — feedback-loopen som möjliggör studentens egen utveckling
+- **Yrkesmässighet och självledning** (§5.6) — där lärautonomi är listat som signal
+- **AI-arbetsflöde** — AI som verktyg för egen utforskning, kompletterar inte bara ersätter studenten
+
+### Riskhantering
+
+Lärautonomi är **inte** att lämna studenten själv. Det är att:
+- Tillhandahålla strukturerat material som studenten kan läsa självständigt
+- Validera förståelse via worked examples, completion problems och code review
+- Stötta när studenten kör fast — utan att lösa problemet åt hen
+
+Studenter som upprepat har svårt att jobba självgående identifieras tidigt via formativ bedömning och får riktat stöd.
+
+---
+
+## 8. Taxonomi för LLM-extraktion (input till Sonnet-prompten)
 
 LLM:n ska för varje annons returnera strukturerad data enligt taxonomin nedan. Detta gör att vi kan aggregera per *kompetensspår*, inte bara per verktyg.
 
@@ -206,7 +264,7 @@ LLM:n får också utdrag ur denna brief (avsnitt 5) som context i prompten, så 
 
 ---
 
-## 7. Risker och förbehåll
+## 9. Risker och förbehåll
 
 - **Annonser ljuger.** "Senior" i annonser betyder ofta "vi vill ha en junior-mid men törs inte säga det". Sonnet hjälper genom att läsa hela texten, men datat är aldrig perfekt.
 - **AI-arbetsflöde är underrapporterat i annonser 2026.** Tekniken används överallt men nämns sällan explicit. Detta spår kommer behöva *kuraterat ramverk* utöver annonsdata.
@@ -216,7 +274,7 @@ LLM:n får också utdrag ur denna brief (avsnitt 5) som context i prompten, så 
 
 ---
 
-## 8. Vad ledningsgruppen ska få beslutsunderlag för
+## 10. Vad ledningsgruppen ska få beslutsunderlag för
 
 Slutleveransen ska besvara minst dessa frågor:
 
@@ -230,11 +288,11 @@ Slutleveransen ska besvara minst dessa frågor:
 
 ---
 
-## 9. Arbetsprocess härifrån
+## 11. Arbetsprocess härifrån
 
 1. ✅ Datapipeline byggd: JobTech + RemoteOK + WWR + HN, 453 annonser totalt
 2. ✅ Keyword-baseline kört, gav stack-signaler (TS+React+Node+PG+AWS)
-3. ⏳ **Nästa: LLM-extraktion med Sonnet 4.6** mot taxonomin i avsnitt 6
+3. ⏳ **Nästa: LLM-extraktion med Sonnet 4.6** mot taxonomin i avsnitt 8
 4. Aggregering per kompetensspår (inte per verktyg)
 5. Triangulering med Stack Overflow Developer Survey + GitHub/Vercel AI-rapporter
 6. Kuraterat AI-arbetsflöde-ramverk (kan inte härledas från annonser)

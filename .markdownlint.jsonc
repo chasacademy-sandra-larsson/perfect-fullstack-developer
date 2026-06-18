@@ -1,0 +1,7 @@
+{
+  // Kursplaner är löpande prosa — radlängd ska inte hårdbrytas vid 80 tecken
+  "MD013": false,
+  // Lärandemålen numreras avsiktligt löpande (1–7 kunskaper, 8+ färdigheter osv.)
+  // över rubrikerna, vilket MD029 inte förstår
+  "MD029": false
+}
