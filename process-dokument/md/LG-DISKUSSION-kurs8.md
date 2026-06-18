@@ -166,3 +166,46 @@ Från `output/report.md` — SE-niche (n=69, icke-Java/.NET fullstack-annonser):
 | Docker | 33% | (täckt i kurs 4) |
 | Kubernetes | 17% | ❌ Inte explicit — diskussionspunkt |
 | Terraform | 16% | ❌ Inte explicit — diskussionspunkt |
+
+---
+
+## Datadriven gap-analys mot anställningssignaler
+
+> **Frågeställning:** Vad i perfect-fullstack-datan finns *inte* i nuvarande FJS26 — och var ligger störst risk att studenten missar inträdesbarriärerna för junior-anställning?
+
+### Hårda gap — inträdesbarriärer ≥40% som ej är explicit täckta
+
+Dessa är annonsfrekvens-prioriterade och påverkar direkt sannolikheten att studenten klarar intervjuer och får LIA-platser:
+
+| Signal | % SE niche | Status nu | Konsekvens om vi inte täcker |
+|---|:---:|---|---|
+| **observability** | 44 | ❌ Saknas helt | Studenten kan inte felsöka i drift, vet inte vad logs/metrics/tracing är — direkt rödflagg i intervju |
+| **distributed_systems** | 48 | ⚠️ Endast implicit via serverless | Studenten saknar mental modell för queues, event-driven, eventual consistency |
+| **performance_scaling** (backend) | 59 | ⚠️ Bara frontend täckt | Studenten saknar caching, query-optimering, indexstrategi — vanlig junior-fråga |
+
+**Total signalmassa som annars är gap:** ~151 procentenheter över 3 inträdesbarriärer.
+
+### Mjuka gap — differentierare bara implicit täckta
+
+Dessa är edge mot andra juniorer men inte avgörande. De är "trevliga att stärka" snarare än anställningskritiska:
+
+| Signal | % SE niche | Status nu |
+|---|:---:|---|
+| problem_decomposition | 78 | Implicit i projektarbete — inget eget mål |
+| debugging | 22 | Implicit — inget eget mål |
+| refactoring_craft | 22 | Implicit — inget eget mål |
+| documentation | 19 | Implicit — inget eget mål |
+| Kubernetes | 17 | ❌ Ej med — diskussionspunkt 3 ovan |
+| Terraform | 16 | ❌ Ej med — diskussionspunkt 3 ovan |
+
+### Rekommendation från datan
+
+De tre hårda gapen ligger **alla naturligt i kurs 8** och motsvarar uppskattningsvis 1–2 v innehåll = 5–10 YHp. Detta sammanfaller med de 10 YHp som idag fattas mellan FJS26 (420 YHp) och FJS25 (430 YHp).
+
+**Datadrivet förslag på allokering:**
+
+- **Alt A (datadriven, max anställnings-ROI):** Allt 10 YHp till kurs 8 — 65 → 75 YHp / 13 v → 15 v. LIA kvar på 110 YHp. Adresserar samtliga tre hårda gap.
+- **Alt B (kompromiss):** 5 YHp till kurs 8 (70 YHp, observability + 1 av övriga) + 5 YHp till LIA (115 YHp).
+- **Alt C (LIA-tung):** Allt 10 YHp till LIA (120 YHp). Hårda gap förblir täckta endast inom befintliga 65 YHp.
+
+Marknadssignalerna stödjer **Alt A** för anställningschans. **Alt B** balanserar mot LG-mötets tidigare intention att kunna utöka LIA med 1–2 v.
